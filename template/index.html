@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="icon" href="data:,">
+        <link rel="stylesheet" href="{{ url_for('static', filename='leaderboard_Styles.css') }}">
+        <title>{{ title }}</title>
+    </head>
+    <div class ='overall'>
+        <body>
+            <div class ='table'>
+                <table>
+                    <h1>
+                        <tr>
+                            <th> Name </th>
+                            <th> Ranking </th>
+                        </tr>
+                        {% for j in users %}
+                        <tr>
+                            <td>{{ j }}</td>
+                            <td>{{users.index(j)+1}}</td>
+                        </tr>
+                    </h1>
+                    {%endfor%}
+                </table>
+            </div>
+            <div class ='buttons'>
+                <form  action ="/match" method = "post" class = "form">
+                    <h2>Input Match Result</h2><br>
+                    Winner
+                    <input type = "text" name="Winner" value="">
+                    Loser
+                    <input type = "text" name="Loser" value="">
+                    <input type="submit" value="Submit">
+                    <br>{{MatchMsg}}
+                </form>
+                <div class = 'AR' style="position:fixed; bottom: 0; right: 0;">
+                    <form action ="/add" method = "post" class = "form">
+                            Add a New Player
+                            <input type = "text" name="AddPlayer" value="">
+                            <input type="submit" value="Submit">
+                            {{AddMsg}}
+                    </form>
+                    <form action ="/remove" method = "post" class = "form">
+                        Remove
+                        <input type = "text" name="RemovePlayer" value="">
+                        <input type="submit" value="Submit">
+                        {{RemoveMsg}}
+                    </form>
+                </div>
+            </div>
+        </body>
+    </div>
+</ul>
+</html>

@@ -1,0 +1,47 @@
+/* scroll bar imple,emtation */
+
+::-webkit-scrollbar
+/* width */
+::-webkit-scrollbar {width: 10px;}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {background: #f1f1f1;}
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {background: #888;}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {background: #555;}
+
+  
+  /* Styling */
+  table,tr, th, td {border:1px solid black;}
+  button:hover{background: #555555ab;}
+  button{margin:2px}
+  h1, h2{font-size: 24;}
+  body {background-color: rgb(103, 103, 103);
+  width: 1000px;}
+  body,h1,h2 {color:white;
+    font-family: "helvetica", sans-serif;}
+
+
+  
+    /* divs */
+  .overall{display: flex;
+  margin: 10px 20px 10px 20px;}
+
+ .table{
+  background-color: rgb(57, 57, 57);
+   border-collapse:collapse;
+  }
+
+  .buttons{background-color: (57, 57, 57); 
+    text-align: left;}
+    
+    .AR {
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    

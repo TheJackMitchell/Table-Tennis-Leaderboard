@@ -31,7 +31,7 @@ def index():
 # update leaderboard#
 @app.route("/match", methods=["GET", "POST"])
 def match():
-    """"""
+    """function to input a  match result, with validation to ensure only valid entries are made"""
     global users
     valid = False
 
@@ -69,6 +69,7 @@ def match():
 # add player#
 @app.route("/add", methods=["POST"])
 def add():
+    """function to add a new player to the list, robust against special characters and validated to ensure double entries can't be made"""
     global users
     print(request.form)
 
@@ -90,6 +91,8 @@ def add():
 # remove player#
 @app.route("/remove", methods=["POST"])
 def remove():
+    
+    """Function to remove players from the database, validated to ensure only people who are in the list can be removed"""
     global users
     print(request.form)
 

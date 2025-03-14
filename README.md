@@ -1,5 +1,5 @@
 # Table-Tennis-Leaderboard
-Table Tennis Leaderboard for afo Edinurgh
+Table Tennis Leaderboard for afo Edinburgh
 
 if you have  any questions or just want to contact me my email is:
 jack_mitchell@btinternet.com
